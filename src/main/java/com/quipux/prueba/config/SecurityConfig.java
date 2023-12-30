@@ -22,7 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .antMatchers("/playLists").permitAll()
+                                .antMatchers("/playLists/**").hasRole("ADMIN") // Solo para usuarios con rol ADMIN
+                                .antMatchers("/playLists/getAll").hasRole("USER")
                                 .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManagement ->
@@ -36,13 +37,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 
-        UserDetails user = User.withUsername("oscar")
+        UserDetails user = User.withUsername("user1")
                 .password("1234")
                 .roles("USER")
                 .build();
 
-        UserDetails admin = User.withUsername("admin")
-                .password("admin")
+        UserDetails admin = User.withUsername("oscar")
+                .password("1234")
                 .roles("ADMIN")
                 .build();
 

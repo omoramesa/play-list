@@ -6,6 +6,7 @@ import com.quipux.prueba.service.PlayListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +24,7 @@ public class PlayListController {
      * @param playlist
      * @return
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/add")
     public ResponseEntity<Object> addPlaylistWithSongs(@RequestBody PlayList playlist) {
         try {
@@ -44,6 +46,8 @@ public class PlayListController {
      * Método para consultar todas las listas de reproducción
      * @return
      */
+
+    @PreAuthorize("hasRole('USER')")
     @GetMapping("/getAll")
     public ResponseEntity<Object> getAllPlaylists() {
         try {
@@ -68,6 +72,7 @@ public class PlayListController {
      * @param listName
      * @return
      */
+    @PreAuthorize("hasRole('USER')")
     @GetMapping("/{listName}")
     public ResponseEntity<Object> getPlaylistByName(@PathVariable String listName) {
         try {
@@ -88,6 +93,7 @@ public class PlayListController {
      * @param listName
      * @return
      */
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/{listName}")
     public ResponseEntity<Object> deletePlaylist(@PathVariable String listName) {
         try {

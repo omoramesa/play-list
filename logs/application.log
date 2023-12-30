@@ -1788,3 +1788,262 @@ Caused by: java.lang.IllegalArgumentException: Pattern cannot be null or empty
 03:01:43.620 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 03:01:43.645 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 03:01:43.650 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+03:01:52.855 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 12920 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+03:01:52.861 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+03:01:54.280 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:01:54.385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+03:01:55.962 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+03:01:55.984 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+03:01:55.985 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03:01:55.986 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+03:01:56.273 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03:01:56.274 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3265 ms
+03:01:56.345 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+03:01:56.739 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+03:01:56.761 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03:01:57.153 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:01:57.253 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+03:01:57.573 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:01:57.794 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03:01:58.978 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:01:58.994 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:01:59.073 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:02:00.108 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1896299b, org.springframework.security.web.context.SecurityContextPersistenceFilter@488279d3, org.springframework.security.web.header.HeaderWriterFilter@70cac22a, org.springframework.security.web.authentication.logout.LogoutFilter@402676e3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52fec840, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21ed4a51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e149513, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42d7e8bc, org.springframework.security.web.session.SessionManagementFilter@10b2c1cf, org.springframework.security.web.access.ExceptionTranslationFilter@7fce1069, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18a38bba]
+03:02:00.624 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+03:02:00.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+03:02:00.675 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 8.683 seconds (JVM running for 10.026)
+03:02:23.356 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:02:23.357 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03:02:23.359 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+03:02:23.676 [http-nio-8080-exec-1] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+03:02:27.840 [http-nio-8080-exec-3] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+03:02:30.793 [http-nio-8080-exec-4] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+03:02:45.574 [http-nio-8080-exec-7] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+03:08:47.019 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+03:08:47.020 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+03:08:47.034 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+03:08:47.040 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+03:09:11.230 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 5972 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+03:09:11.246 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+03:09:12.956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+03:09:13.128 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 2 JPA repository interfaces.
+03:09:15.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+03:09:15.410 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+03:09:15.411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+03:09:15.411 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+03:09:16.233 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+03:09:16.233 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4858 ms
+03:09:16.298 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+03:09:16.731 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+03:09:16.753 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+03:09:17.744 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:09:18.204 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+03:09:22.610 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:09:24.529 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+03:09:34.412 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:09:34.446 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03:09:34.526 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03:09:35.671 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ac326c0, org.springframework.security.web.context.SecurityContextPersistenceFilter@749c0669, org.springframework.security.web.header.HeaderWriterFilter@4891d727, org.springframework.security.web.authentication.logout.LogoutFilter@2c451c4a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@44e3f3e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41cf4272, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38363e96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e5d40ec, org.springframework.security.web.session.SessionManagementFilter@1ba3c03d, org.springframework.security.web.access.ExceptionTranslationFilter@21ed4a51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d3e5a05]
+03:09:36.286 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+03:09:36.323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+03:09:36.405 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 26.514 seconds (JVM running for 29.334)
+03:10:57.941 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03:10:57.942 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+03:10:57.944 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+03:10:58.477 [http-nio-8080-exec-1] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+03:11:05.161 [http-nio-8080-exec-3] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+08:34:52.676 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+08:34:52.731 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+08:34:52.856 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:34:52.885 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:03:54.458 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 5456 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:03:54.505 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:03:58.028 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:03:58.158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+10:04:00.689 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:04:00.776 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:04:00.777 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:04:00.777 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:04:01.253 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:04:01.254 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6388 ms
+10:04:01.324 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:04:01.976 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:04:01.992 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:04:02.776 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:04:03.270 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:04:04.453 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:04:04.969 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:04:07.249 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:04:07.260 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:04:07.343 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:04:08.887 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@682fe17b, org.springframework.security.web.context.SecurityContextPersistenceFilter@39159b14, org.springframework.security.web.header.HeaderWriterFilter@59043741, org.springframework.security.web.authentication.logout.LogoutFilter@29fc83c5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7792e14f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43b2e7db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64fba3e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@418bdde9, org.springframework.security.web.session.SessionManagementFilter@10508ba6, org.springframework.security.web.access.ExceptionTranslationFilter@14e83c9d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4769537a]
+10:04:09.883 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:04:09.968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:04:10.002 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 17.433 seconds (JVM running for 24.632)
+10:04:28.293 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:04:28.294 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:04:28.296 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:04:49.725 [http-nio-8080-exec-4] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+10:05:00.867 [http-nio-8080-exec-8] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+10:17:48.474 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:17:48.475 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:17:48.515 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:17:48.528 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:18:03.280 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 7248 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:18:03.283 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:18:04.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:18:04.895 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+10:18:06.625 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:18:06.686 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:18:06.687 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:18:06.688 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:18:07.049 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:18:07.049 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3655 ms
+10:18:07.117 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:18:07.504 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:18:07.544 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:18:08.160 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:18:08.816 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:18:10.198 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:18:10.626 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:18:12.322 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:18:12.332 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:18:12.410 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:18:13.495 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41d84abb, org.springframework.security.web.context.SecurityContextPersistenceFilter@aaa7000, org.springframework.security.web.header.HeaderWriterFilter@1ea19c97, org.springframework.security.web.authentication.logout.LogoutFilter@69c0bae6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@74c23525, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58d79479, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65698020, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54087bdb, org.springframework.security.web.session.SessionManagementFilter@530df3ab, org.springframework.security.web.access.ExceptionTranslationFilter@510a2c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43549c6c]
+10:18:14.022 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:18:14.058 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:18:14.072 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 11.814 seconds (JVM running for 13.874)
+10:18:31.978 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:18:31.979 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:18:31.987 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+10:18:48.629 [http-nio-8080-exec-3] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+10:22:38.867 [http-nio-8080-exec-5] ERROR c.q.p.contoller.PlayListController - Error en la respuesta: No hay listas de reproducción disponibles
+10:22:45.449 [http-nio-8080-exec-8] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+10:23:36.676 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:23:36.676 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:23:36.712 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:23:36.742 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:23:52.925 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 7872 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:23:52.934 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:23:54.471 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:23:54.586 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+10:23:57.599 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:23:57.692 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:23:57.693 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:23:57.693 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:23:58.225 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:23:58.225 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5175 ms
+10:23:58.289 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:23:58.786 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:23:58.803 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:23:59.558 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:24:00.017 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:24:01.316 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:24:02.028 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:24:05.991 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:24:06.002 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:24:06.061 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:24:07.275 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c451c4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ea19c97, org.springframework.security.web.header.HeaderWriterFilter@45375bdf, org.springframework.security.web.authentication.logout.LogoutFilter@39a30d1a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@418bdde9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52dd1be2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@da11873, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38ad86b1, org.springframework.security.web.session.SessionManagementFilter@510a2c7, org.springframework.security.web.access.ExceptionTranslationFilter@7535307c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@558aa1f1]
+10:24:07.946 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:24:07.973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:24:07.986 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 16.336 seconds (JVM running for 18.256)
+10:25:16.470 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:25:16.471 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:25:16.534 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:25:16.549 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:25:30.736 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 4476 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:25:30.756 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:25:32.382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:25:32.512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+10:25:34.688 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:25:34.773 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:25:34.773 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:25:34.773 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:25:35.653 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:25:35.654 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4774 ms
+10:25:35.727 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:25:36.166 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:25:36.184 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:25:37.082 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:25:37.924 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:25:39.693 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:25:40.249 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:25:42.763 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:25:42.779 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:25:42.849 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:25:43.889 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@261f5a45, org.springframework.security.web.context.SecurityContextPersistenceFilter@749c0669, org.springframework.security.web.header.HeaderWriterFilter@4891d727, org.springframework.security.web.authentication.logout.LogoutFilter@2c451c4a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7320750c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41cf4272, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38363e96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76673ed, org.springframework.security.web.session.SessionManagementFilter@1ba3c03d, org.springframework.security.web.access.ExceptionTranslationFilter@21ed4a51, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b63365c]
+10:25:44.476 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:25:44.506 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:25:44.522 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 14.904 seconds (JVM running for 17.753)
+10:26:32.328 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:26:32.329 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:26:32.330 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:26:45.060 [http-nio-8080-exec-3] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+10:33:56.800 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:33:56.800 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:33:56.813 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:33:56.818 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:34:06.650 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 9024 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:34:06.658 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:34:08.170 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:34:08.280 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+10:34:09.889 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:34:09.909 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:34:09.910 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:34:09.911 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:34:10.205 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:34:10.206 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3346 ms
+10:34:10.284 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:34:10.630 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:34:10.653 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:34:11.009 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:34:11.124 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:34:11.495 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:34:11.739 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:34:12.917 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:34:12.931 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:34:13.009 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:34:14.012 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5667dd90, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ba3c03d, org.springframework.security.web.header.HeaderWriterFilter@21ed4a51, org.springframework.security.web.authentication.logout.LogoutFilter@240df292, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5300694d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@749c0669, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4504a4ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@261f5a45, org.springframework.security.web.session.SessionManagementFilter@7741507c, org.springframework.security.web.access.ExceptionTranslationFilter@488279d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58945295]
+10:34:14.536 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:34:14.572 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:34:14.586 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 8.718 seconds (JVM running for 10.055)
+10:34:56.778 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:34:56.780 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:34:56.783 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:34:57.627 [http-nio-8080-exec-2] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+10:36:26.462 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:36:26.463 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:36:26.471 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:36:26.478 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:36:34.072 [main] INFO  com.quipux.prueba.PruebaApplication - Starting PruebaApplication using Java 11.0.18 on DESKTOP-GJ1R3QU with PID 13488 (D:\Oscar\Oscar Mora\Prueba Quipux\prueba\target\classes started by Diana in D:\Oscar\Oscar Mora\Prueba Quipux\prueba)
+10:36:34.077 [main] INFO  com.quipux.prueba.PruebaApplication - No active profile set, falling back to default profiles: default
+10:36:35.451 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:36:35.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+10:36:37.066 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:36:37.089 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:36:37.090 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:36:37.091 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+10:36:37.342 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:36:37.343 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3139 ms
+10:36:37.413 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:36:37.793 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:36:37.816 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+10:36:38.240 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:36:38.337 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.1.Final
+10:36:38.695 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:36:38.898 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:36:39.956 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:36:39.970 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:36:40.054 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:36:41.129 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44e3f3e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@21ed4a51, org.springframework.security.web.header.HeaderWriterFilter@5862dda4, org.springframework.security.web.authentication.logout.LogoutFilter@1368e2f7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6839d03b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4891d727, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@627d5f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6be1f37f, org.springframework.security.web.session.SessionManagementFilter@488279d3, org.springframework.security.web.access.ExceptionTranslationFilter@70cac22a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f9e6167]
+10:36:41.638 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:36:41.672 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:36:41.686 [main] INFO  com.quipux.prueba.PruebaApplication - Started PruebaApplication in 8.394 seconds (JVM running for 9.584)
+10:37:11.994 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:37:11.994 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:37:11.996 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:37:21.056 [http-nio-8080-exec-3] ERROR c.q.p.contoller.PlayListController - Se creo La lista con exito
+10:37:46.217 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:37:46.218 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+10:37:46.231 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:37:46.239 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
