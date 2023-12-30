@@ -26,22 +26,30 @@ public class PlayListService {
             if (playlist == null || playlist.getNombre() == null || playlist.getNombre().trim().isEmpty()) {
                 return new ResponseEntity<>("El nombre de la lista no puede estar vacío.", HttpStatus.BAD_REQUEST);
             }
+            // Validar que el nombre de la lista sea único
+            if (isPlaylistNameUnique(playlist.getNombre())) {
+                // Guardar la lista de reproducción
+                PlayList savedPlaylist = playListRepository.save(playlist);
 
-            // Guarda la lista de reproducción
-            PlayList savedPlaylist = playListRepository.save(playlist);
-
-            // Asigna las canciones a la lista de reproducción y las guarda
-            if (playlist.getCanciones() != null && !playlist.getCanciones().isEmpty()) {
-                for (Song song : playlist.getCanciones()) {
-                    song.setPlaylist(savedPlaylist);
-                    songRepository.save(song);
+                // Asignar las canciones a la lista de reproducción y guardarlas
+                if (playlist.getCanciones() != null && !playlist.getCanciones().isEmpty()) {
+                    for (Song song : playlist.getCanciones()) {
+                        song.setPlaylist(savedPlaylist);
+                        songRepository.save(song);
+                    }
                 }
-            }
 
-            return new ResponseEntity<>(savedPlaylist, HttpStatus.CREATED);
+                return new ResponseEntity<>(savedPlaylist, HttpStatus.CREATED);
+            } else {
+                return new ResponseEntity<>("El nombre de la lista ya existe. Por favor, elige otro.", HttpStatus.BAD_REQUEST);
+            }
         } catch (Exception e) {
             return new ResponseEntity<>("Error al crear la lista de reproducción con canciones.", HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+    private boolean isPlaylistNameUnique(String playlistName) {
+        Optional<PlayList> existingPlaylist = playListRepository.findByNombre(playlistName);
+        return existingPlaylist.isEmpty();
     }
     public ResponseEntity<Object> getAllPlaylists() {
         try {
